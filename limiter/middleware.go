@@ -9,8 +9,7 @@ import (
 func (rl *RateLimiter) Middleware(limit int, window time.Duration, next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		key := "rate_limit:" + r.RemoteAddr
-
-		allowed, err := rl.Allow(r.Context(), key, limit, window)
+		allowed, err := rl.Allow(r.Context(), key, limit)
 		if err != nil {
 			log.Printf("Rate limiter error: %v", err)
 			next.ServeHTTP(w, r)
