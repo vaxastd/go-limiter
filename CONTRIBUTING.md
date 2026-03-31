@@ -47,7 +47,7 @@ If you find any bugs or have suggestions for improvements, please create a new i
 
 ## Communication
 
-If you want to discuss something related to your contribution or the project in general, feel free to reach out to us via [Discussions](https://github.com/vaxa/go-limiter/discussions).
+If you want to discuss something related to your contribution or the project in general, feel free to reach out to us via [Discussions](https://github.com/vaxastd/go-limiter/discussions).
 
 <br>
 Thank you for your contribution!
